@@ -1,0 +1,33 @@
+dialog {
+    z-index: 3;
+    margin-top: 40vh;
+    background-color: var(--charcoal);
+    border: none;
+    border-radius: 12px;
+    color: white;
+}
+
+#settings-close {
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+#settings-close:hover {
+    transition: .2s;
+    color: var(--cambridge-blue);
+}
+
+
+input {
+    padding: 10px 14px;
+    font-size: 1.2rem;
+    background-color: var(--oxford-blue);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    width: 30vw;
+}

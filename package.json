@@ -1,0 +1,36 @@
+{
+  "name": "yuzu-launcher",
+  "productName": "Yuzu Launcher",
+  "version": "1.0.0",
+  "description": "Launcher for Yuzu games",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Nils Simons",
+    "email": "nilssimons@nilssimons.me"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "puppeteer": "^21.6.1",
+    "robotjs": "^0.6.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "electron": "28.1.0"
+  }
+}
