@@ -11,7 +11,7 @@ if (require('electron-squirrel-startup')) {
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
     show: false,
-    fullscreen: true,
+    // fullscreen: true,
     width: 1000,
     
     autoHideMenuBar: true,
@@ -22,7 +22,7 @@ const createWindow = () => {
     },
   });
 
-  mainWindow.maximize();
+  // mainWindow.maximize();
   mainWindow.setAlwaysOnTop(true, 'screen');
   mainWindow.show();
 
@@ -60,7 +60,7 @@ const createWindow = () => {
   })
 
 
-  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 };
 app.on('ready', createWindow);
 
